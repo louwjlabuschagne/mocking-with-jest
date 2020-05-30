@@ -1,4 +1,4 @@
-name: Caching NPM
+name: Tests with Cache
 
 on: push
 
@@ -24,9 +24,6 @@ jobs:
 
     - name: Install Dependencies
       run: npm ci
-
-    - name: Build
-      run: npm build
 
     - name: Test
       run: npm test
